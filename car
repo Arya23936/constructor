@@ -1,0 +1,41 @@
+public class Car {
+    String brand;
+    int year;
+    String color;
+
+    
+    public Car() {
+        brand = "Unknown";
+        year = 0;
+        color = "Not specified";
+              
+    public Car(String brand, int year, String color) {
+        this.brand = brand;
+        this.year = year;
+        this.color = color;
+    }
+
+    public Car(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
+        this.color = "Default color";
+    }
+
+    public void displayInfo() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Year: " + year);
+        System.out.println("Color: " + color);
+    }
+
+    public static void main(String[] args) {
+        Car car1 = new Car(); 
+        Car car2 = new Car("Toyota", 2022, "Red");
+        Car car3 = new Car("Honda", 2020); 
+        System.out.println("Car 1:");
+        car1.displayInfo();
+        System.out.println("\nCar 2:");
+        car2.displayInfo();
+        System.out.println("\nCar 3:");
+        car3.displayInfo();
+    }
+}
