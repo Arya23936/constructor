@@ -1,0 +1,28 @@
+public class Printer {
+
+    public void print(String text) {
+        System.out.println("Printing string: " + text);
+    }
+
+    public void print(int number) {
+        System.out.println("Printing integer: " + number);
+    }
+
+
+    public void print(double number) {
+        System.out.println("Printing double: " + number);
+    }
+
+    public void print(boolean value) {
+        System.out.println("Printing boolean: " + value);
+    }
+
+    public static void main(String[] args) {
+        Printer printer = new Printer();
+
+        printer.print("Hello, Java!");
+        printer.print(123);
+        printer.print(3.14159);
+        printer.print(true);
+    }
+}
